@@ -1,0 +1,242 @@
+{
+  "recordedAt": "2026-11-13T08:39:55.628Z",
+  "repo": {
+    "owner": "OWASP",
+    "repo": "NodeGoat",
+    "url": "https://github.com/OWASP/NodeGoat",
+    "description": "The OWASP NodeGoat project provides an environment to learn how OWASP Top 10 security risks apply to web applications developed using Node.js and how to effectively address them.",
+    "stars": 2084,
+    "pushedAt": "2024-06-15T01:20:40Z",
+    "languages": [
+      "HTML",
+      "JavaScript",
+      "Dockerfile",
+      "Procfile"
+    ],
+    "sourceFiles": 27,
+    "testFiles": 17
+  },
+  "health": {
+    "score": 56,
+    "dimensions": [
+      {
+        "name": "Security",
+        "score": 0,
+        "note": "8 vulnerable packages (1 critical, 6 high)"
+      },
+      {
+        "name": "Testing",
+        "score": 100,
+        "note": "17 test files for 27 source files"
+      },
+      {
+        "name": "Maintainability",
+        "score": 100,
+        "note": "CI present, README ok, 0 very large files"
+      },
+      {
+        "name": "Activity",
+        "score": 10,
+        "note": "last push 881 days ago, 9 recent authors"
+      },
+      {
+        "name": "Dependencies",
+        "score": 74,
+        "note": "14 of 30 checked packages are a major version behind"
+      }
+    ]
+  },
+  "findings": [
+    {
+      "id": "F1",
+      "title": "underscore@1.8.3 has 2 known vulnerabilities",
+      "severity": "critical",
+      "category": "Security",
+      "detail": "Declared in package.json. Arbitrary Code Execution in underscore (GHSA-cf4h-3jhx-xvhq, GHSA-qpx9-hpmf-5gmw).",
+      "evidenceLabel": "GHSA-cf4h-3jhx-xvhq",
+      "evidenceUrl": "https://osv.dev/vulnerability/GHSA-cf4h-3jhx-xvhq",
+      "source": "auditor"
+    },
+    {
+      "id": "F2",
+      "title": "body-parser@1.15.1 has 3 known vulnerabilities",
+      "severity": "high",
+      "category": "Security",
+      "detail": "Declared in package.json. body-parser vulnerable to Denial of Service via trailing bytes after a compressed request body (GHSA-27r3-jxmh-p828, GHSA-qwcr-r2fm-qrc7, GHSA-v422-hmwv-36x6).",
+      "evidenceLabel": "GHSA-27r3-jxmh-p828",
+      "evidenceUrl": "https://osv.dev/vulnerability/GHSA-27r3-jxmh-p828",
+      "source": "auditor"
+    },
+    {
+      "id": "F3",
+      "title": "marked@0.3.5 has 6 known vulnerabilities",
+      "severity": "high",
+      "category": "Security",
+      "detail": "Declared in package.json. Inefficient Regular Expression Complexity in marked (GHSA-5v2h-r2cx-5xgj, GHSA-7px7-7xjx-hxm8, GHSA-p9wx-2529-fp83).",
+      "evidenceLabel": "GHSA-5v2h-r2cx-5xgj",
+      "evidenceUrl": "https://osv.dev/vulnerability/GHSA-5v2h-r2cx-5xgj",
+      "source": "auditor"
+    },
+    {
+      "id": "F4",
+      "title": "mongodb@2.1.18 has 1 known vulnerability",
+      "severity": "high",
+      "category": "Security",
+      "detail": "Declared in package.json. Denial of Service in mongodb (GHSA-mh5c-679w-hh4r).",
+      "evidenceLabel": "GHSA-mh5c-679w-hh4r",
+      "evidenceUrl": "https://osv.dev/vulnerability/GHSA-mh5c-679w-hh4r",
+      "source": "auditor"
+    },
+    {
+      "id": "F5",
+      "title": "swig@1.4.2 has 1 known vulnerability",
+      "severity": "high",
+      "category": "Security",
+      "detail": "Declared in package.json. Arbitrary local file read vulnerability during template rendering  (GHSA-2rq5-699j-x7p6).",
+      "evidenceLabel": "GHSA-2rq5-699j-x7p6",
+      "evidenceUrl": "https://osv.dev/vulnerability/GHSA-2rq5-699j-x7p6",
+      "source": "auditor"
+    },
+    {
+      "id": "F6",
+      "title": "async@2.0.0 has 1 known vulnerability",
+      "severity": "high",
+      "category": "Security",
+      "detail": "Declared in package.json. Prototype Pollution in async (GHSA-fwr7-v2mv-hh25).",
+      "evidenceLabel": "GHSA-fwr7-v2mv-hh25",
+      "evidenceUrl": "https://osv.dev/vulnerability/GHSA-fwr7-v2mv-hh25",
+      "source": "auditor"
+    },
+    {
+      "id": "F7",
+      "title": "grunt@1.0.3 has 3 known vulnerabilities",
+      "severity": "high",
+      "category": "Security",
+      "detail": "Declared in package.json. Path Traversal in Grunt (GHSA-j383-35pm-c5h4, GHSA-m5pj-vjjf-4m3h, GHSA-rm36-94g8-835r).",
+      "evidenceLabel": "GHSA-j383-35pm-c5h4",
+      "evidenceUrl": "https://osv.dev/vulnerability/GHSA-j383-35pm-c5h4",
+      "source": "auditor"
+    },
+    {
+      "id": "F8",
+      "title": "express@4.13.4 has 2 known vulnerabilities",
+      "severity": "medium",
+      "category": "Security",
+      "detail": "Declared in package.json. express vulnerable to XSS via response.redirect() (GHSA-qw6h-vgh9-j6wx, GHSA-rv95-896h-c2vc).",
+      "evidenceLabel": "GHSA-qw6h-vgh9-j6wx",
+      "evidenceUrl": "https://osv.dev/vulnerability/GHSA-qw6h-vgh9-j6wx",
+      "source": "auditor"
+    },
+    {
+      "id": "F9",
+      "title": "Repository looks unmaintained",
+      "severity": "medium",
+      "category": "Maintenance",
+      "detail": "The last push was 881 days ago.",
+      "evidenceLabel": "commit history",
+      "evidenceUrl": "https://github.com/OWASP/NodeGoat/commits/master",
+      "source": "quality"
+    },
+    {
+      "id": "F10",
+      "title": "7 dependencies are 2+ major versions behind",
+      "severity": "high",
+      "category": "Dependencies",
+      "detail": "forever 2.0.0 → 4.0.3; helmet 2.0.0 → 8.3.0; marked 0.3.5 → 18.2.0; mongodb 2.1.18 → 7.9.0; cross-env 7.0.2 → 10.1.0",
+      "evidenceLabel": "package.json",
+      "evidenceUrl": "https://github.com/OWASP/NodeGoat/blob/master/package.json",
+      "source": "auditor"
+    }
+  ],
+  "logs": {
+    "scout": [
+      "Found OWASP/NodeGoat (2084 stars, branch master)",
+      "Read file tree: 111 files",
+      "Sampled 12 key files and 1 manifests"
+    ],
+    "auditor": [
+      "Parsed 34 pinned dependencies from 1 manifests",
+      "8 packages with known vulnerabilities, 14 major versions behind, 0 secret-like strings"
+    ],
+    "quality": [
+      "17 test files, 27 source files, CI found"
+    ]
+  },
+  "treeCount": 111,
+  "keyFilePaths": [
+    "app/routes/index.js",
+    "app/routes/allocations.js",
+    "app/routes/benefits.js",
+    "app/routes/contributions.js",
+    "app/routes/memos.js",
+    "app/routes/profile.js",
+    "app/routes/research.js",
+    "app/routes/session.js",
+    "app/routes/tutorial.js",
+    "server.js",
+    "config/config.js",
+    "artifacts/db-reset.js"
+  ],
+  "topPaths": [
+    "app.json",
+    "app/assets/favicon.ico",
+    "app/assets/images/nodegoat_logo.png",
+    "app/assets/images/owasplogo.png",
+    "app/assets/js/chart/chart-data-morris.js",
+    "app/assets/js/tour/redirects-steps.js",
+    "app/assets/vendor/bootstrap/bootstrap-tour.css",
+    "app/assets/vendor/bootstrap/bootstrap-tour.js",
+    "app/assets/vendor/bootstrap/bootstrap.css",
+    "app/assets/vendor/bootstrap/bootstrap.js",
+    "app/assets/vendor/chart/morris-0.4.3.min.js",
+    "app/assets/vendor/chart/raphael-min.js",
+    "app/assets/vendor/html5shiv.js",
+    "app/assets/vendor/jquery.min.js",
+    "app/assets/vendor/theme/font-awesome/css/font-awesome.min.css",
+    "app/assets/vendor/theme/font-awesome/fonts/FontAwesome.otf",
+    "app/assets/vendor/theme/font-awesome/fonts/fontawesome-webfont.eot",
+    "app/assets/vendor/theme/font-awesome/fonts/fontawesome-webfont.svg",
+    "app/assets/vendor/theme/font-awesome/fonts/fontawesome-webfont.ttf",
+    "app/assets/vendor/theme/font-awesome/fonts/fontawesome-webfont.woff",
+    "app/assets/vendor/theme/sb-admin.css",
+    "app/data/allocations-dao.js",
+    "app/data/benefits-dao.js",
+    "app/data/contributions-dao.js",
+    "app/data/memos-dao.js",
+    "app/data/profile-dao.js",
+    "app/data/research-dao.js",
+    "app/data/user-dao.js",
+    "app/routes/allocations.js",
+    "app/routes/benefits.js",
+    "app/routes/contributions.js",
+    "app/routes/error.js",
+    "app/routes/index.js",
+    "app/routes/memos.js",
+    "app/routes/profile.js",
+    "app/routes/research.js",
+    "app/routes/session.js",
+    "app/routes/tutorial.js",
+    "app/views/allocations.html",
+    "app/views/benefits.html",
+    "app/views/contributions.html",
+    "app/views/dashboard.html",
+    "app/views/error-template.html",
+    "app/views/layout.html",
+    "app/views/login.html",
+    "app/views/memos.html",
+    "app/views/profile.html",
+    "app/views/research.html",
+    "app/views/signup.html",
+    "app/views/tutorial/a1.html",
+    "app/views/tutorial/a10.html",
+    "app/views/tutorial/a2.html",
+    "app/views/tutorial/a3.html",
+    "app/views/tutorial/a4.html",
+    "app/views/tutorial/a5.html",
+    "app/views/tutorial/a6.html",
+    "app/views/tutorial/a7.html",
+    "app/views/tutorial/a8.html",
+    "app/views/tutorial/a9.html",
+    "app/views/tutorial/layout.html"
+  ]
+}
